@@ -1,4 +1,4 @@
-#0. A hianyzasok.txt beolvasása listákba
+#0. feladat a hianyzasok.txt beolvasása listában listákba
 
 hianyzasok=[]
 with open("./adatok/hianyzasok.txt","r",encoding="utf-8") as fm:
