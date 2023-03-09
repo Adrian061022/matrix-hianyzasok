@@ -19,6 +19,8 @@ for het in hianyzasok:
 
 print(f"1. feladat: {osszeg} óra hiányzás volt összesen")
 
+# 2. Volt-e olyan hét, amikor nem volt hiányzó?
+
 
 # 2. Volt-e olyan hét, amikor nem volt hiányzó?
 index=0
@@ -32,6 +34,12 @@ else:
 # 3. Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt
 #3. feladat: Volt olyan hét, amikor ötnél kevesebb hiányzó volt
 
+index=0
+while index<len(hianyzasok) and not(sum(hianyzasok[index])<5):
+    index+=1
+van=index<len(hianyzasok)
+if van:
+    print(f"Volt olyan hét, amikor ötnél kevesebb hiányzó volt")
+else:
+    print(f"Nem volt olyan hét, amikor ötnél kevesebb hiányzó volt")
 
-# 4. Melyik héten volt a legtöbb hiányzás?
-#4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
