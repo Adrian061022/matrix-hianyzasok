@@ -49,5 +49,4 @@ else:
 index=0
 while not (sum(hianyzasok[index])==1):
     index+=1
-
 print(f"5. feladat: {index+1}. héten volt egyetlen hiányzás")
