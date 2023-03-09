@@ -43,6 +43,16 @@ if van:
 else:
     print(f"3.feladat: Nem volt olyan hét, amikor ötnél kevesebb hiányzó volt")
 
+# 4. Melyik héten volt a legtöbb hiányzás?
+#4. feladat: A legtöbb hiányzás a 3. héten volt (16 óra)
+
+max_index=0
+for index in range(len(hianyzasok)):
+    if sum(hianyzasok[index])>sum(hianyzasok[max_index]):
+        max_index=index
+
+print(f"4. feladat: A legtöbb hiányzás a {max_index+1} héten volt ({sum(hianyzasok[max_index])})")
+
 # 5. Hányadik héten volt egyetlen hiányzás?
 #5. feladat: 4. héten volt egyetlen hiányzás
 
