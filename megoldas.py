@@ -20,7 +20,15 @@ for het in hianyzasok:
 print(f"1. feladat: {osszeg} óra hiányzás volt összesen")
 
 
+# 2. Volt-e olyan hét, amikor nem volt hiányzó?
+
+ossz=0
+for hiany in hianyzasok:
+    if hiany!=0:
+        ossz+=1
+if ossz!=0:
+    print("Volt olyan hét, amikor nem volt hiányzó")
+
 # 3. Volt-e olyan hét, amikor ötnél kevesebb hiányzás volt
 #3. feladat: Volt olyan hét, amikor ötnél kevesebb hiányzó volt
-# 2. Volt-e olyan hét, amikor nem volt hiányzó?
-print(f"2. feladat: Nem volt olyan hét, amikor nem volt hiányzó")
+
